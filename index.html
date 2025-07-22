@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cipher Tool</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Cipher Tool</h1>
+
+    <div class="toggle-buttons">
+        <button class="active">Caesar</button>
+        <button>Polybius</button>
+    </div>
+
+    <div class="form-group">
+        <label for="fileInput">Upload .txt File:</label>
+        <input type="file" id="fileInput" accept=".txt" />
+        <p id="fileName">Selected file: none</p>
+    </div>
+
+    <div class="form-group">
+        <label for="shiftValue">Shift Value (0-25):</label>
+        <input type="number" id="shiftValue" min="0" max="25" value="3" />
+    </div>
+
+    <div class="button-group">
+        <button class="encrypt">Encrypt File</button>
+        <button class="decrypt">Decrypt File</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
